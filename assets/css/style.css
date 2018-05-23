@@ -5,7 +5,7 @@ body {
     background-color: #f5f3f3;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
-    padding-bottom: 100px;
+    padding-bottom: 15%;
 }
 
 h1, h2 {
@@ -13,7 +13,7 @@ h1, h2 {
 }
 
 .container {
-    /* max-width: 964px; */
+    max-width: 980px;
     margin: 0 auto;
     background-color: #ffffff;
 }
@@ -23,8 +23,9 @@ header {
     border-bottom: 3px solid #dddddd;
 }
 
-h1 {
+#Logo {
     display: inline-block;
+    margin-left: 5%;
     padding: 25px;
     font-size: 30pt;
     color: #ffffff;
@@ -35,7 +36,7 @@ h1 {
 /*line-height used to adjust the top-bottom spacing of the navigation buttons due to the font size of h1 in the same inline*/
 .navigation {
     float: right;
-    line-height: 88px;
+    line-height: 91px;
 }
 
 .navigation a {
@@ -72,11 +73,10 @@ h1 {
 
 h2 {
     font-family: Georgia, Times, 'Times New Roman', serif;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 3%;
     font-size: 30px;
-    margin-left: 25px;
-    margin-right: 25px;
     color: #4aaaa5;
     font-weight: bold;
     border-bottom: 3px solid #dddddd;
@@ -84,25 +84,24 @@ h2 {
 
 /*overflow used to wrap all content within container across multiple pages*/
 #contentHeader {
-    margin-top: 50px;
+    margin: 5%;
     border: 2px solid #dddddd;
     overflow: auto;
-    padding-bottom: 20px;
+    padding-top: 3%;
 }
 
 /*margin-bottom pulls the bio to appropriate spaceing*/
 #profilePicture {
     float: left;
-    margin: 25px;
-    margin-bottom: 0px;
+    margin: 3%;
+    margin-top: 4%;
     max-width: 100%;
     height: auto;
 }
 
 /*margin-bottom pulls the container back because of line-height adjustment*/
 .bio p {
-    margin: 20px;
-    margin-bottom: 0px;
+    margin: 3%;
     line-height: 200%;
 }
 
@@ -112,22 +111,22 @@ footer {
     width: 100%;
     bottom: 0;
     background-color: #666666;
-    border-top: 7px solid #4aaaa5;
+    border-top: 5px solid #4aaaa5;
     text-align: center;
     color: #dddddd;
 }
 
 footer p {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 /* Contact.html specifics */
 
 form {
-    margin-left: 25px;
-    margin-right: 28px;
-    padding-bottom: 10px;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 form p {
@@ -139,12 +138,14 @@ form p {
 /*Targeting the input boxes to pull to width of container less margins*/
 input[type=text] {
     width: 100%;
+    box-sizing: border-box;
 }
 
 /*Targeting the message area*/
 textarea {
     width: 100%;
-    height: 175px;
+    box-sizing: border-box;
+    height: 50%;
 }
 
 input[type=submit] {
@@ -157,12 +158,10 @@ input[type=submit] {
 }
 
 /* Portfolio.html specifics */
-
-
 .project {
     position: relative;
     float: left;
-    margin: 25px;
+    margin: 3%;
     opacity: 0.65;
     /*Controls speed of opacity change*/
     transition: opacity 1.5s;
@@ -173,42 +172,52 @@ input[type=submit] {
     opacity: 1.0;
 }
 
-.project img {
-    width: 300px;
-    height: 230px;
-}
-
 /*Position: absolute so the order of html can be ignored and text can flow into the image dimensions*/
 .description {
     position: absolute;
     width: 100%;
     color: #ffffff;
     background-color: #4aaaa5;
-    bottom: 15px;
+    bottom: 10%;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 @media screen and (max-width: 980px) {
-    h1 {
-        margin-left: 50px;
+    #contentHeader {
+        max-width: 100%;
     }
 
-    #contentHeader {
-        margin-left: 50px;
-        margin-right: 50px;
+    .project img {
+        max-width: 284px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+    }
+
+    .project {
+        width: 284px;
+        height: 190px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    h1 {
-        margin-left: 20px;
+    #contentHeader {
+        max-width: 100%;
+        padding-bottom: 3%;
     }
 
-    #contentHeader {
-        margin-left: 20px;
-        margin-right: 20px;
+    .project img {
+        max-width: 302px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+    }
+
+    .project {
+        width: 302px;
+        height: 200px;
     }
 }
 
@@ -217,15 +226,11 @@ input[type=submit] {
         position: static;
     }
 
-    .container {
-        max-width: 980px;
-    }
-
-    h1 {
+    #Logo {
         width: 100%;
-        margin-left: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
         text-align: center;
     }
 
@@ -237,7 +242,16 @@ input[type=submit] {
         line-height: 70px;
     }
 
-    #contentHeader {
-        margin: 20px;
+    .project img {
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        max-height: none;
+    }
+
+    .project {
+        float: none;
+        width: auto;
+        height: auto;
     }
 }
