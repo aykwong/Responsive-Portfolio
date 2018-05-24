@@ -184,9 +184,42 @@ input[type=submit] {
     padding-bottom: 3%;
 }
 
+/* Extra media query to make it not look ugly on monitors larger than 980px */
+@media screen and (min-width: 981px) {
+    #contentHeader {
+        max-width: 882px;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding-top: 29px;
+    }
+
+    h2 {
+        margin-left: 26px;
+        margin-right: 26px;
+        padding-bottom: 20px;
+    }
+
+    .project img {
+        max-width: 240px;
+        max-height: 250px;
+        width: auto;
+        height: auto;
+    }
+
+    .project {
+        width: 240px;
+        height: 190px;
+    }
+
+    footer p {
+        padding-top: 29px;
+        padding-bottom: 29px;
+    }
+}
+
 @media screen and (max-width: 980px) {
     #contentHeader {
-        max-width: 100%;
+        max-width: 66%;
     }
 
     .project img {
