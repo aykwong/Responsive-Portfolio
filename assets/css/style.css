@@ -90,7 +90,6 @@ h2 {
     padding-top: 3%;
 }
 
-/*margin-bottom pulls the bio to appropriate spaceing*/
 #profilePicture {
     float: left;
     margin: 3%;
@@ -99,7 +98,6 @@ h2 {
     height: auto;
 }
 
-/*margin-bottom pulls the container back because of line-height adjustment*/
 .bio p {
     margin: 3%;
     line-height: 200%;
@@ -220,6 +218,7 @@ input[type=submit] {
 @media screen and (max-width: 980px) {
     #contentHeader {
         max-width: 66%;
+        padding-bottom: 3%;
     }
 
     .project img {
@@ -238,7 +237,6 @@ input[type=submit] {
 @media screen and (max-width: 768px) {
     #contentHeader {
         max-width: 100%;
-        padding-bottom: 3%;
     }
 
     .project img {
@@ -273,6 +271,17 @@ input[type=submit] {
         text-align: center;
         background-color: #ffffff;
         line-height: 70px;
+    }
+
+    #profilePicture {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bio p {
+        clear: both;
     }
 
     .project img {
