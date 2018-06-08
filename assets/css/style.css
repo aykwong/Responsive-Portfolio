@@ -240,14 +240,14 @@ input[type=submit] {
     }
 
     .project img {
-        max-width: 302px;
-        max-height: 250px;
+        max-width: 252px;
+        max-height: 200px;
         width: auto;
         height: auto;
     }
 
     .project {
-        width: 302px;
+        width: 252px;
         height: 200px;
     }
 }
