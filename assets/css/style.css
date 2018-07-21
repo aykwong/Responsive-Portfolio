@@ -8,7 +8,7 @@ body {
     padding-bottom: 15%;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -171,29 +171,34 @@ input[type=submit] {
 
 /* Portfolio.html specifics */
 .project {
-    position: relative;
-    float: left;
     margin: 3%;
+    margin-bottom: 8%;
     opacity: 0.65;
     /*Controls speed of opacity change*/
     transition: opacity 1.5s;
 }
 
+.project img {
+    float: right;
+}
+
+.project p {
+    line-height: 2;
+    text-decoration: none;
+}
+
+h3 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 1%;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid #dddddd;
+}
+
 /*Fades in and out the images on mouse hover*/
 .project:hover {
     opacity: 1.0;
-}
-
-/*Position: absolute so the order of html can be ignored and text can flow into the image dimensions*/
-.description {
-    position: absolute;
-    width: 100%;
-    color: #ffffff;
-    background-color: #4aaaa5;
-    bottom: 10%;
-    text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
 }
 
 /* Extra media query to make it not look ugly on monitors larger than 980px */
@@ -218,10 +223,10 @@ input[type=submit] {
         height: auto;
     }
 
-    .project {
+    /* .project {
         width: 240px;
         height: 190px;
-    }
+    } */
 }
 
 @media screen and (max-width: 980px) {
@@ -236,11 +241,11 @@ input[type=submit] {
         width: auto;
         height: auto;
     }
-
+/* 
     .project {
         width: 284px;
         height: 190px;
-    }
+    } */
 }
 
 @media screen and (max-width: 768px) {
@@ -255,10 +260,10 @@ input[type=submit] {
         height: auto;
     }
 
-    .project {
+    /* .project {
         width: 252px;
         height: 200px;
-    }
+    } */
 }
 
 @media screen and (max-width: 640px) {
@@ -300,9 +305,9 @@ input[type=submit] {
         max-height: none;
     }
 
-    .project {
+    /* .project {
         float: none;
         width: auto;
         height: auto;
-    }
+    } */
 }
