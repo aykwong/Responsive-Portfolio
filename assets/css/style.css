@@ -33,6 +33,19 @@ header {
     font-weight: bold;
 }
 
+.sm-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.social-media {
+    padding-top: 5px;
+}
+
+.social-media > a {
+    text-decoration: none;
+}
+
 /*line-height used to adjust the top-bottom spacing of the navigation buttons due to the font size of h1 in the same inline*/
 .navigation {
     float: right;
@@ -115,8 +128,9 @@ footer {
 }
 
 footer p {
-    padding-top: 3%;
-    padding-bottom: 3%;
+    font-size: 9pt;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 /* Contact.html specifics */
@@ -207,11 +221,6 @@ input[type=submit] {
     .project {
         width: 240px;
         height: 190px;
-    }
-
-    footer p {
-        padding-top: 29px;
-        padding-bottom: 29px;
     }
 }
 
